@@ -4,7 +4,7 @@ function App() {
   const [message,setMessage]=useState("");
 
   useEffect(()=>{
-    fetch("https://mern-deploy-vilf.onrender.com")
+    fetch("https://mern-deploy-backend-aild.onrender.com")
     .then((res)=>res.json())
     .then((data)=>setMessage(data.message))
   },[])
